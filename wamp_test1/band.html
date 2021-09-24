@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<!--STYLE ATTRIBUTES-->
+<style>
+body{
+font:400 15px/1.8 Lato,sans-serif;
+color:rgb(114, 112, 112);
+}
+.navbar{
+font-family:Montserrat,sans-serif;
+margin-bottom:0;
+background-color:#2d2d30;
+border: 0;
+font-size:11px,!important;
+letter-spacing: 4px;
+opacity:0.9;
+}
+h3 , h4{
+margin:10px 0 30px 0;
+letter-spacing:10px;
+font-size:20px;
+color:#111;
+}
+.container{
+  padding: 80px ,120px;
+}
+.person{
+border:10px solid transparent;
+margin-bottom:25px;
+width:80%;
+height:80%;
+opacity:0.7;
+}
+.person:hover{
+border-color:#f1f1f1;
+}
+.carousel-inner img{
+width:1280;
+margin:1024;
+}
+.carousel-caption h3{
+color:#fff !important;
+}
+
+.bg-1{
+background:#2d2d30;
+color:#bdbdbd;
+}
+.bg-1 h3{
+color:#fff;
+}
+bg-1 p{
+font-style:italic;
+color:#fff;
+}
+.list-group-item:first-child{
+border-bottom-right-radius:0;
+border-bottom-left-radius:0;
+}
+.thumbnail{
+padding: 0 0 15px 0;
+border: 2px 2px white;
+}
+.thumbnail p{
+margin-top:15px;
+color:#555;
+}
+.btn{
+padding:10px 20px;
+background-color:#333;
+color:#f1f1f1;
+border-radius:0;
+transition:.2s;
+}
+.btn:hover, .btn:focus{
+border: 1px solid #333;
+color: #fff !important;
+color:white;
+}
+.modal-header,h4,.close{
+background-color:#333;
+color:#fff !important;
+text-align:center;
+font-size:30px;
+}
+.modal-header , .modal-body{
+padding:40px 50px;
+}
+.nav-tabs li a{
+color:#777;
+}
+.navbar li a,.navbar .navbar-brand{
+color: #d5d5d5 !important;
+}
+.navbar li a:hover{
+color:#fff !important;
+}
+.navbar li.active a{
+color: #fff !important;
+background-color: #29292c !important;
+}
+navbar-default .navbar-toggle{
+border-color:transparent;
+}
+.open .dropdown-toggle{
+color:#fff;
+background-color:#555 !important;
+}
+.dropdown-menu li a{
+color:#000 !important;
+}
+.dropdown-menu li a:hover{
+background-color:rgb(209,54,54);
+}
+footer{
+background-color:#18181a;
+color:#18181a;
+padding:32px;
+}
+footer a{
+color:#f5f5f5;
+}
+footer a:hover{
+color:rgb(20, 20, 20);
+text-decoration:none;
+}
+.form-control{
+border-radius:0;
+}
+textarea{
+resize:none;
+}
+.navbar_image{
+width:90px;
+height:55px;
+margin-left:-20px;
+margin-top:-20px;
+}
+.carousel_images{
+height:700;
+width:800;
+}
+.center_element{
+text-align:center;
+margin: 0 auto;
+}
+.mx_width{
+max-width:50px;
+}
+.txt_shadow{
+text-shadow: 2px 2px lighblue;
+font-family:times new roman;
+color:lightgray;
+}
+.float_class{
+float:left;
+padding:10px;
+clear:right;
+overflow:auto;
+color:black !important;
+}
+.black_color{
+color: black !important;
+}
+.back_color{
+background-color:rgb(229, 229, 229);
+}
+.always_show{
+display:block !important;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+$("#p1").hover(function(){
+
+  });
+ });
+</script>
+
+<head>
+<!--TITLE OF PAGE -->
+<title>My band </title>
+<!--included bootstrap libraries -->
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+
+ <meta name="viewport" content="width=device-width
+,initial-scale=1">
+
+ <link rel="stylesheet"
+href="bootstrap/bootstrap-3.3.7-dist/css/bootstra
+p.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="bootstrap/bootstra
+  p-3.3.7-dist/js/bootstrap.min.js"></script>
+<script
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+ </script>
+ 
+</head>
+<!-- BODY-->
+<div>
+<body id="mypage" data-spy="scroll" data-target=".navbar"
+data-offset="50">
+<!--NAVIGATION BAR ON TOP NOT FIXED-->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" 
+data-toggle="collapse" data-target="#mynavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#mypage"><img src="images/brand.gif" alt="Logo"
+class="navbar_image"></a>
+</div>
+<div class="collapse navbar-collapse" id="mynavbar">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#mypage">Home</a></li>
+<li><a href="#band">Band</a></li>
+<li><a href="#tour">Tour</a></li>
+<li><a href="#contact">Contact</a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+More
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Merchendasise</a></li>
+<li><a href="#media">Extra</a></li>
+<li><a href="#media">Media</a></li>
+</ul>
+</li>
+<li><a href="#"><span class="glyphicon glyphicon-search"></span>
+</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!--------------------------------------------------------------------->
+<!--CAROUSEL-->
+<div id="mycarousel" class="carousel slide carousel_images" data-ride="carousel">
+<!--indicator-->
+   <ol class="carousel-indicators">
+ <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ <li data-target="#myCarousel" data-slide-to="1"></li>
+ <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+<!--SLIDERS-->
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="images/band1.jpg" alt="band_photo_1" class="carousel_images">
+<div class="carousel-caption">
+<h3>First photo of the band gallery</h3>
+<p>There is no need to say more</p>
+</div>
+</div>
+
+<div class="item">
+<img src="images/band4.jpg" alt="band_photo_2" class="carousel_images">
+<div class="carousel-caption">
+<h3>First album photo</h3>
+<p>The very first photo of the album 
+its was chosen by the band themselves</p>
+</div>
+</div>
+
+<div class="item">
+<img src="images/band3.jpg" alt="band_photo_3" class="carousel_images">
+<div class="carousel-caption">
+<h3>Third gallery photo</h3>
+<p>An interesting choice of album photo </p>
+    </div>
+  </div>
+</div>
+
+<!--Carousel controls-->
+<a class="left carousel-control" href="#mycarousel"
+role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+</span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#mycarousel"
+role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"
+aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+
+<!---MAIN CONTAINER----->
+<div id="band" class="container text-center">
+<h3>TOOL</h3>
+<p><strong>The band</strong>
+emerged with a heavy metal sound on their first studio album, 
+Undertow (1993), and later became a dominant act in 
+the alternative metal movement, with the release of their 
+second album, Ænima in 1996. Their efforts to unify musical 
+experimentation, visual arts, and a message of personal 
+evolution continued, with Lateralus (2001) and the most recent album, 10,000 Days (2006), gaining 
+the band critical acclaim, and commercial success around the world.
+Due to Tool's incorporation of visual arts and very long and 
+complex releases, the band is generally described 
+as a style-transcending act and part of progressive rock, 
+psychedelic rock, and art rock. 
+The relationship between the band and today's music 
+industry is ambivalent, at times marked by censorship, 
+and the band's insistence on privacy.</p>
+<br>
+<h1 class="txt_shadow center_element">BAND MEMEBERS</h1>
+<br>
+<div class="row">
+<div class="col-sm-4">
+<p class="text-center"><strong>Maynard james keenan</strong></p>
+<br>
+<a href="#demo" data-toggle="collapse">
+<img src="images/band_member.jpg" class="img-circle person img-responsive"
+alt="member" width="255" height="255">
+</a>
+<div id="demo" class="collapse">
+<p><strong>MEMBER</strong></p>
+<p>Lead vocalist</p>
+<p>Memver since 1990</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="text-center"><strong>Danny carey</strong></p>
+<a href="#demo2" data-toggle="collapse">
+<img src="images/band_member.jpg" class="img-circle person img-responsive">
+</a>
+<div id="demo2" class="collapse">
+<p><strong>MEMBER</strong></p>
+<p>Drums</p>
+<p>Memver since 1990</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="text-center"><strong>Adam Jones</strong></p>
+<a href="#demo3" data-toggle="collapse">
+<img src="images/band_member.jpg" class="img-circle person img-responsive">
+</a>
+<div id="demo3" class="collapse">
+<p><strong>MEMBER</strong></p>
+<p>Guitar</p>
+<p>Memver since 1990</p>
+</div>
+</div>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="mymodal"
+role="dialog">
+<div class="modal-dialog">
+<!--Content-->
+<div class="modal-content">
+<div class="modal header">
+<button type="button" class="close" 
+data-dismiss="modal">x</button>
+<h4><span class="glyphicon glyphicon-lock"></span>TICKETS</h4>
+</div>
+<div class="modal-body">
+<form role="form">
+<div class="form-group">
+<label for="psw">
+<span class="glyphicon glyphicon-shopping-cart"></span>
+50$ per person
+</label>
+<input type="number" class="form-control" id="psw"
+placeholder="amount">
+</div>
+<div class="form-group">
+<label for="usrname"><span class="glyphicon glyphicon-user"></span>
+Sent to
+</label>
+<input type="text" class="form-control" id="usrname"
+placeholder="Enter Email">
+</div>
+<button type="submit" class="btn btn-block">Pay
+<span class="glyphicon glyphicon-ok"></span>
+</button>
+</form>
+</div>
+<div  class="modal-footer">
+<button type="submit" class="btn btn-danger btn-default pull-left"
+data-dismiss="modal">
+<span class="glyphicon glyphicon-remove"></span>
+Cancel
+</button>
+
+</div>
+</div>
+</div>
+</div>
+<!---TOUR SECTION-->
+<div id="tour" class="bg-1">
+<div class="container">
+<h3 class="text-center">Tour dates</h3>
+<p class="text-center">Come and see us</p>
+<ul class="list-group" class="mx_width">
+<li class="list-group-item">JULY
+<span class="label label-danger">SOLDOUT</span></li>
+<li class="list-group-item">SEPTEMBER
+<span class="badge"> 125</span></li>
+<li class="list-group-item">NOVEMBER
+<span class="badge">2000
+</span></li>
+</ul>
+<div class="row text-center">
+
+<div class="col-sm-4">
+<div class="thumbnail">
+<img src="images/f4.jpg" class="carousel_images">
+<p><strong>Greece</strong></p>
+<p>July 13 2017</p>
+<button class="btn btn-default" data-toggle="modal"
+data-target="#mymodal">Buy tickets</button>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail">
+<img src="images/f2.jpg" class="carousel_images">
+<p><strong>Italy</strong></p>
+<p>SEPTEMBER 13 2017</p>
+<button class="btn btn-default" data-toggle="modal"
+data-target="#mymodal">Buy tickets</button>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="thumbnail">
+<img src="images/f3.jpg" class="carousel_images">
+<p><strong>Sydney</strong></p>
+<p>NOVEMBER 13 2017</p>
+<button class="btn btn-default" data-toggle="modal"
+data-target="#mymodal">Buy tickets</button>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<!--CONTACT SECTION-->
+
+<div id="contact" class="container">
+<h3 class="text-center">Contact us</h3>
+<p class="text-center"><em>Will giveaway 10 tickets to the best fans</em></p>
+<div class="row">
+<div class="col-md-4">
+<p>Drop us a note to see how much of a fan you are</p>
+<p><span class="glyphicon glyphicon-map-marker"></span>Somewhere,over the ocean
+</p>
+<p><span class="glyphicon glyphicon-phone"></span>Phone: 444-333-222-111
+</p>
+<p><span class="glyphicon glyphicon-envelope"></span>Email:email@gmail.com
+</p>
+</div>
+<div class="col-md-8">
+<div class="row">
+<div class="col-sm-6 form-group">
+<input class="form-control" id="name" name="name"
+placeholder="Name" type="text" required>
+</div>
+<div class="col-sm-6 form-group">
+<input class="form-control" id="email" name="email"
+Placeholder="E-mail" type="email" required>
+</div>
+</div>
+<textarea class="form-control" id="comments" name="comments"
+placeholder="Comments" rows="5" cols="30"></textarea>
+<br>
+<div class="row">
+<div class="col-md-12 form-group">
+<button class="btn pull-right" type="submit">Send</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<h3 class="text-center">Other band members opinions</h3>
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#menu0">DJ</a>
+</li>
+<li><a data-toggle="tab" href="#menu1">FFDP</a></li>
+<li><a data-toggle="tab" href="#menu2">Disturbed</a></li>
+</ul>
+<div class="tab-content">
+<div id="menu0" class="tab-pane fade in active">
+<h2>DJ Khaled</h2>
+<p>I really like this band, wish there were <strong>ANOTHER ONE</strong> just like them
+</p>
+</div>
+<div id="menu1" class="tab-pane fade">
+<h2>Five finger death punhch</h2>
+<p>Amazing work</p>
+</div>
+<div id="menu2" class="tab-pane fade">
+<h2>Disturbed</h2>
+<p>Good quality music</p>
+</div>
+</div>
+</div>
+<!----Video----->
+<h2 class="text-center">Take a taste</h2>
+<iframe width="800" height="600" id="media"
+src="https://www.youtube.com/watch?v=nspxAG12Cpc">
+</iframe>
+<!---FOOTER---->
+<footer class="text-center back_color">
+<a class="up-arrow float_class" href="#mypage" data-toggle="tooltip"   title="Go to top">
+<span class="glyphicon glyphicon-chevron-up" ></span></a>
+<br>
+<br>
+</div>
+<p class="black_color"> Simple &copy theme page</p>
+</footer>
+</body>
+</html>

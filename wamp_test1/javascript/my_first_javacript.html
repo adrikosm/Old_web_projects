@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+	background-color:#4EB1BA;
+	background-image:url("jpeg-home.jpg");
+	background-repeat: no-repeat;
+}
+h1{
+background-image:url("pic_bulbon.gif");
+background-repeat:no-repeat;
+background-position:right top;
+
+
+text-align:center;
+color:#E9E9E9;
+}
+h2{
+color:#E9E9E9;
+}
+div{
+text-align:center
+}
+
+</style>
+<body>
+<title>Javascript</title>
+
+<head><h1>My first javascript</h1></title>
+
+<div>
+<button type="button" 
+onclick="alert(document.getElementById('demo').innerHTML = Date())">
+press here for the time and date</button>
+</div>
+
+<br>
+<div id ='demo' style ="fontWeight= 'bold'"></div>
+
+
+
+<h2>What can javacript do...?</h2>
+
+<p id ='change'>Well it can change the HTML contet</p>
+
+<button type="button"
+onclick="document.getElementById('change').
+innerHTML='like this'">
+Press here to see how
+</button>
+<br>
+
+<h2>It can also change the size of an element</h2>
+<p id='second_change'>This is a test phrase to view size changes
+</p>
+
+<button type="button"
+onclick="document.getElementById(second_change)
+.style.fontSize='35px'">Click here to see
+</button>
+<br>
+<h2>Aswell as hide or show hidden messages</h2>
+<p id="show_hide">Like this one here </p>
+
+
+
+if (document.getElementById(show_hide).syle.display='block'){
+
+
+<button type="button"
+onclick ="document.getElementById(show_hide).
+style.display='none'">Click here to hide </button>
+}else{ 
+
+<button type="button"
+onclick ="document.getElementById(show_hide).
+style.display='block'">Click here to show</button>
+}
+
+
+
+
+
+
+
+
+
+<hr>
+
+<img id="myimage"
+onclick="changeimage()"
+src="pic_bulboff.gif"
+width="100" height="180">
+
+<br>
+
+<p><strong>Click</strong> the light bulb to turn on and off</p>
+
+<script>
+function changeimage(){
+var image =
+document.getElementById("myimage");
+if(image.src.match("bulbon")){
+image.src="pic_bulboff.gif";
+
+}else{
+image.src="pic_bulbon.gif";
+}
+}
+</script>
+
+<h2>Or alternatively click the buttons to change the 
+lightbulb</h2>
+<br>
+<button
+onclick="document.getElementById(myimage)
+.src='pic_bulboff.gif'">Turn off the light</button>
+<button 
+onclick="document.getElementById('myImage').
+src='pic_bulbon.gif'">Turn on the light</button>
+
+
+
+</body>
+
+</html>

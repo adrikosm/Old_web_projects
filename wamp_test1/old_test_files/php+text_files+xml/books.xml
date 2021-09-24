@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+<book>
+<category>Cooking</category>
+<title lang="english">Everyday Panini </title>
+<author> Giada de Laurentiis </author>
+<year>2017</year>
+<price>30</price>
+</book>
+
+<book>
+<category>Children</category>
+<title lang="english">Harrtis Potter</title>
+<author>Joking Rolling </author>
+<year> 1990</year>
+<price>299</price>
+</book>
+
+<book>
+<category>Web</category>
+<title lang ="english">XQuery Kick Start</title>
+<author>James Mcgaiver</author>
+<year>2003</year>
+<price>4</price>
+</book>
+
+<book>
+<category>Web</category>
+<title lang="english">Learning XML</title>
+<author>Erik t. chair</author>
+<year>2008</year>
+<price>40</price>
+</book>
+
+</bookstore>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+li{
+display:inline-block;
+color:blue;
+}
+body{
+background-color:#eee;
+}
+</style>
+
+</head>
+<body>
+
+
+<ul>
+<li><p id="demo1"></p></li>
+
+<li><p id="demo2"></p></li>
+
+<li><p id="demo3"></p></li>
+</ul>
+
+<script>
+var car1={
+type:"Opel",
+model:"420",
+color:"black",
+wheel: "no"
+};
+var car2={
+type:"Fiat",
+model:"450",
+color:"yellow",
+wheel: "yes"
+};
+var car3={
+type:"Nissan",
+model:"550",
+color:"white",
+wheel: "yes"
+};
+
+
+document.getElementById("demo1").innerHTML=
+"Car type  	 " + car1.type  + "<br>" +
+"Car model   " + car1.model + "<br>" +
+"Car color   " + car1.color + "<br>" +
+"Has wheels  " + car1.wheel ;
+
+document.getElementById("demo2").innerHTML=
+"Car type    " + car2.type  + "<br>" +
+"Car model   " + car2.model + "<br>" +
+"Car color   " + car2.color + "<br>" +
+"Has wheels  " + car2.wheel ;
+document.getElementById("demo3").innerHTML=
+"Car type    " + car3.type  + "<br>" +
+"Car model   " + car3.model + "<br>" +
+"Car color   " + car3.color + "<br>" +
+"Has wheels  " + car3.wheel ;
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

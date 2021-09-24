@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+h1{
+text-shadow: 2px 2px lightblue;
+}
+h2{
+text-shadow:2px 2px lightblue;
+}
+img{
+height:1020px;
+width:800px;
+}
+</style>
+<head>
+<title>Bootstrap form</title>
+
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+
+ <meta name="viewport" content="width=device-width
+,initial-scale=1">
+
+ <link rel="stylesheet"
+href="bootstrap/bootstrap-3.3.7-dist/css/bootstra
+p.min.css">
+
+ <script src="https://ajax.googleapi
+s.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="bootstrap/bootstra
+  p-3.3.7-dist/js/bootstrap.min.js"></script>
+<script
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+ </script>
+</head>
+<body style="background-color:#eee">
+<h1>Bootstrap form handling</h1>
+<hr>
+<div class="container">
+<h2>Basic form:</h2>
+<br>
+<!--START OF FORM
+------------------------>
+<form action="#" method="post">
+<div class="form-group">
+<label for="email">Email:</label>
+<div class="input-group">
+
+<span class="input-group-addon"><i class="glyphicon glyphicon-user">
+</i></span>
+<input  type="email" class="form-control" id="email"
+placeholder="Enter Email" name="email" autocomplete="off">
+</div>
+</div>
+
+<div class="form-group">
+<label for="password">Password:</label>
+
+<div class="input-group">
+
+<span class="input-group-addon"><i class="glyphicon glyphicon-lock">
+</i></span>
+<input type="password" class="form-control" id="password"
+placeholder="Enter password" name="password" required>
+
+</div>
+<span class="help_block">Password is protected</span>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" name="remeber">Remember me</label>
+</div>
+
+<div class="form-group">
+<label for ="select1">Select a number</label>
+<div class="input-group">
+<span class="input-group-addon">
+<i class="glyphicon glyphicon-sort-by-order"></i></span>
+<select class="form-control" id="select1">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+
+<br>
+</form>
+<!------------------------------------------------
+END OF FORM-->
+<!-- CAROUSEL TEST-->
+<div class="container">
+<h2>Simple test Carousel</h2>
+<br>
+<br>
+<div id="mycarousel" class="carousel slide" 
+data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#mycarousel" data-slide-to="0" class="active">
+</li>
+<li data-target="#mycarousel" data-slide-to="1">
+</li>
+<li data-target="#mycarousel" data-slide-to="2">
+</li>
+</Ol>
+<!-- IMAGES TO SLIDE-->
+<div class="carousel-inner">
+
+<div class="item active">
+<img src="images/t1.jpg" >
+</div>
+
+<div class="item">
+<img src="images/t2.jpg" >
+</div>
+
+<div class="item">
+<img src="images/t3.jpg">
+</div>
+
+</div>
+<!-- CONTROL BUTTONS -->
+<a class="left carousel-control" href="#mycarousel"
+data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#mycarousel"
+data-slide="prev">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+<!------------------------------->
+<!--MODAL-->
+<div class="container">
+<h2>Modal exaple</h2>
+<button type="button" class="btn btn-info btn-lg" 
+data-toggle="modal" data-target="#mymodal">Open Modal</button>
+
+<div class="modal fade" id="mymodal" role="dialog">
+<div class="modal-dialog modal-lg">
+<!--Content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close"
+data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Modal Header</h4>
+</div>
+<div class="modal-body " style="background-color:powderblue;">
+<p>test text for the modal</p>
+</div>
+<div class="modal-footer">
+<button type="button" style="background-color:rgb(99,232,205) "class="btn btn-default" data-dismiss="modal">Close</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--------------------------------------->
+<!------MEDIA------>
+<br>
+<br>
+<div class="media">
+<div class="media-left">
+<img src="images/avatar.jpg" class="media-object"
+style="width:60px;height:auto">
+</div>
+<div class="media-body">
+<h4 class="media-heading">XxxBobISaKiLlErXxx</h4><small>
+<i>Posted on July 5,2017</i></small>
+<p>I <a href="#" data-toggle="popover" data-trigger="focus hover"
+title="Other option"data-content="Like">enjoy</a> 
+the features of this web page altough it seems and feels
+like an <a href="#" data-toggle="tool-tip" title="Henlo stinky">unfinished</a> product</p>
+</div>
+</div>
+<hr>
+
+</div>
+<script>
+$(document).ready(function()){
+$('[data-toggle="tooltip"]').tooltip();
+}};
+</script>
+<script>
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover();
+});
+</script>
+</body>
+<!------------------------------------------------>
+</html>

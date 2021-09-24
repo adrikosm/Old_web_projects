@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script 
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").click(function(){
+        $("p").hide(1000);
+    });
+});
+$(document).ready(function(){
+    $("#p2").click(function(){
+        $("p").show(1000);
+    });
+});
+</script>
+<style>
+body{
+background-color:#eee;
+}
+.center_element{
+text-align:center;
+margin 0 auto;
+}
+h1.txt{
+color:rgb(204,36,50);
+text-shadow: 2px 2px lightblue;
+}
+</style>
+</head>
+<body>
+<h1 class="txt center_element">Jquery buttons</h1>
+<div class="center_element">
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+<button id="p1" class="btn btn-success">Hide</button>
+<button id="p2"
+class="btn btn-info">Show</button>
+</div>
+
+
+</body>
+</html>

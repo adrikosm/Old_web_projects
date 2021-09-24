@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-color:powderblue;
+}
+.image{
+
+display:block;
+margin:auto;
+background-image:url("trolltunga.jpg");
+background-repeat:no-repeat;
+
+border-collapse:collapse;
+border 1px solid;
+z-index=-1;
+opacity=0.5;
+ filter: alpha(opacity=50);
+}
+image:hover{
+opacity=1.0;
+ filter: alpha(opacity=100);
+}
+h1{
+text-align:center;
+padding:20%;
+text-shadow 2px 2px black;
+}
+p{
+margin:auto;
+display:none;
+background-color:rgb(247,244,160);
+padding:20px;
+}
+p::first-letter{
+color:red;
+Font-size:xx-large;
+}
+span:hover p{
+font-size:150%;
+display:block;
+}
+div{
+width:100px;
+height:100px;
+background-color:red;
+position:relative;
+-webkit-animation-name:
+example;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count:infinite;
+animation-name:example;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-timing-function: ease-in-out;
+animation-direction:alternate;
+z-index=-1;
+}
+
+@-webkit-keyframes example{
+0%{background-color:red;     left:0px;   top:0px;}
+25%{background-color:blue;   left:200px; top:0px;}
+50%{background-color:green;  left:200px; top:200px;}
+75%{background-color:yellow; left:0px;   top200px;}
+100%{background-color:red;   left:0px;   top:0px;}
+
+}
+@keyframes example{
+0%{background-color:red;     left:0px;   top:0px;}
+25%{background-color:blue    left:200px; top:0px;}
+50%{background-color:green;  left:200px; top:200px;}
+75%{background-color:yellow; left:0px;   top200px;}
+100%{background-color:red;   left:0px;   top:0px;}
+}
+li{
+display:inline;
+}
+img{
+width:45%;
+height:auto;
+opacity:0.5;
+filter:aplha(opacity=50);
+}
+.image_opacity:hover {
+
+opacity:1.0;
+filter:alpha(opacity=100);
+}
+.ul_class{
+ display:inline;
+    margin: auto;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+.li_class{
+    display: inline;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.li_class:hover{
+background-color:black;
+color:white;
+}
+label.gallery{
+margin:auto;
+width:180px;
+}
+
+label.gallery img{
+width80%;
+height:auto;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+.dropdown-content a:hover{
+background-color:#f1f1f1;
+}
+</style>
+
+<body>
+
+<title>Testing css </title>
+<head><h1 class="image"> CSS type page</h1></head>
+<br>
+<br>
+<label class="dropdown">
+<span><strong>Mouseover</strong> for more</span>
+<label class="dropdown-content">
+<a href="#link1">Link1</a>
+<a href="#link2">Link2</a>
+<a href="#link3">Link3</a>
+</label> 
+</label>
+<br>
+<br>
+<span>Hover over me to show the p element<p>
+This is the p element</p></span>
+
+
+<div>AEIOU</div>
+
+<ul>
+<label class="gallery">
+<li><a target="_blank"
+href="trolltunga.jpg">
+<img src="trolltunga.jpg"class="image_opacity"></a> </li>
+<li><a target="_blank"
+href="test_image.jpg">
+<img src="test_image.jpg" class="image_opacity"></a> </li>
+<li><a target="_blank"
+href="th.jpg">
+<img src="th.jpg"class="image_opacity" ></a></li>
+
+</label>
+</ul>
+
+<hr>
+<ul class="ul_class">
+
+<li class="li_class"><a href="#home">Home</a></li>
+<li class="li_class"><a href="#News">News</a></li>
+<li class="li_class"><label class="dropdown">
+<a href="#Contact">Contact</a><label class="dropdown-content">
+<a href="#Me">Me</a>
+<a href="#the_team">The team</a>
+<a href ="#the developers">The Developers</a>
+</label></label></li>
+</ul>
+</body>
+</html>

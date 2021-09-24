@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport"
+content="widht=device-width,initial-scale=1">
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+flex-container{
+display: -webkit- flex;
+display: flex;
+-webkit- flex-flow: row wrap;
+text-align:center;
+}
+.flex-container>*{
+padding: 15px;
+-webkit-flex:1 100%;
+flex:1 100%;
+}
+.article{
+text-align:left;
+}
+header{
+background:black;
+color:white;
+}
+footer{
+background:#aaa;
+color:white;
+}
+.nav{
+background:#eee;
+}
+.nav ul{
+list-style-type:none;
+paddin:0;
+}
+.nav ul a {
+text-decoration:none;
+}
+@media all and (min-width:768px){
+.nav{
+text-align:left;
+-webkit-flex:1 auto;
+flex:1 auto;
+-webkit- order:1;
+order:1;
+}
+.article{
+-webkit-flex:5 0px;
+flex:5 0px;
+-webkit-order:2;
+order:2;
+}
+footer{
+-webkit-order:3;
+order:3;
+}
+}
+body{
+background-color:powderblue;
+}
+a:link{
+color:black;
+background-color:transparent;
+text-decoration:none;
+}
+a:visited{
+color:pink;
+background-color:transparent;
+text-decoration:none;
+}
+a:hover{
+color:red;
+background-color:transparent;
+text-decoration:underline;
+}
+a:active{
+color:yellow;
+background-color:transparent;
+text-decoration:underline;
+}
+</style>
+<head>
+<title>Simple title</title>
+</head>
+
+<body>
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<button type="button" onclick="alert('spam')">click here</button>
+<p id="demo"></p>
+<p id ="demo2">
+
+<p><i><b>Specify your gender</b></i></p>
+<form>
+<input type="radio" name="gender"value="male">Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="other">Other<br>
+</form>
+<script>
+document.getElementById("demo2").innerHTML= "henlo";
+</script>
+<br>
+</br>
+
+
+<script>
+function myFunction(){
+document.getElementById("demo3").style.color="red";
+document.getElementById("demo3").style.fontSize="25px";
+document.getElementById("demo3").style.backgroundColor="black";
+
+}
+</script>
+<button type="button" onclick="myFunction()">click here</button>
+<p id="demo3">test field</p>
+
+<img src="https://www.w3schools.com/images/picture.jpg" alt="mountain">
+
+<div class="flex-container">
+<header>
+<h1 style="text-align:center">City</h1>
+</header>
+<nav class="nav">
+<ul>
+<li style="text-align:center;"><a href="https://en.wikipedia.org/wiki/London" target="_blank">London</a></li>
+<li style="text-align:center;"><a href="https://en.wikipedia.org/wiki/Paris" target="_blank">Paris</a></li>
+<li style="text-align:center"><a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Tokyo</a></li>
+</ul>
+</nav>
+<article class="article" >
+<h1><b>Article title</b></h1>
+<p> <b>plain text for the article</b></p>
+<footer> Copyright &copy; none</footer>
+</div>
+<div class ="w3-container w3-orange">
+<h1 style="text-align:center;">CSS DEMO</h1>
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+<h2>London</h2>
+<h5>London is the capital city of England</h5>
+<p> Its the most popoulous city of the united kingdom,with
+a metropolitan area of over 13 million inhabitants</p>
+<p>Type of money used &euro; <p>
+</div>
+<div class="w3-third">
+<h2>Paris</h2>
+<h5>Paris is the capital of France</h5>
+<p>The Paris area in one of the largest population centers in Europe
+,with more than 12 million inhabitants </p>
+<p>Type of money used &euro; <p>
+</div>
+<div class="w3-third">
+<h2>Tokyo</h2>
+<h5>Tokyo is the capital of Japan</h5>
+<p>Its the center of the Greater Tokyo Area,and the most populous
+metropolitan in the world</p>
+<p>Type of money used &yen; <p>
+
+</div>
+</div>
+<p><strong>Choose your favourite car model</strong></p>
+<form action="#" method="post">
+<select name="cars">
+<option
+value="volvo">Volvo</option>
+<option value="masserati">Masserati</option>
+<option value="fiat">Fiat</option>
+<option value = "audi">Audi </option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+</form>
+<p><strong>Send an email</strong></p>
+<form action="mailto:someone@example.com" method ="post"
+enctype="text/plain"><br>Name<br>
+<input type="text" name="name"><br>e-mail<br>
+<input type="text" name="mail"><br>Comment<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="send">
+<input type="reset" value="reset">
+</form>
+
+
+</body>
+</html>
