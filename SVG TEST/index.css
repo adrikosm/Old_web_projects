@@ -1,0 +1,122 @@
+svg > .second_design:hover {
+  scale: 1.2;
+}
+
+body {
+  background-color: #181a1b;
+}
+
+#circle_1 {
+  animation: 5s ease-in forwards color infinite,
+    2s ease-in forwards beat infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes color {
+  /* Make it change colors like a rainbow  every 10%*/
+  0% {
+    fill: #78c5d6;
+  }
+  10% {
+    fill: #459ba8;
+  }
+  20% {
+    fill: #79c267;
+  }
+  30% {
+    fill: #c5d647;
+  }
+  40% {
+    fill: #f5d63d;
+  }
+  50% {
+    fill: #f28c33;
+  }
+  60% {
+    fill: #e868a2;
+  }
+  70% {
+    fill: #cebab3;
+  }
+  80% {
+    fill: #fdf3c4;
+  }
+  90% {
+    fill: #b2b3cf;
+  }
+  100% {
+    fill: rgb(27, 176, 202);
+  }
+}
+
+#circle_2 {
+  width: 350px;
+  height: 350px;
+  stroke-dasharray: 98;
+  stroke-dashoffset: 98;
+  stroke: rgb(10, 202, 68);
+  fill: #d3dbd1;
+}
+
+/* When hovering over circle_2 increase its size */
+#circle_2.dash {
+  animation: 6s ease-in dash forwards;
+}
+
+#circle_2.undash {
+  animation: 6s undash forwards;
+}
+
+/* Fill the circle with the stroke dash offset */
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 98;
+    fill: white;
+    scale: 1.1;
+  }
+
+  50% {
+    stroke-dashoffset: 45;
+    scale: 1;
+    fill: lightgray;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: #d3dbd1;
+  }
+}
+
+@keyframes undash {
+  0% {
+    stroke-dashoffset: 0;
+    fill: grey;
+    scale: 1.1;
+  }
+
+  50% {
+    stroke-dashoffset: 45;
+    scale: 1;
+    fill: lightgray;
+  }
+
+  100% {
+    stroke-dashoffset: 98;
+    fill: white;
+  }
+}
+
+.margin_stuff {
+  margin-left: 100px;
+}
